@@ -4,12 +4,16 @@ build_lib(
     model/meshtastic_interface.cc
     model/meshtastic_libinterface.cc
     model/meshtastic_radio.cc
+    model/meshtastic_mac.cc
     helper/meshtastic_helper.cc
+    helper/meshtastic_mac_helper.cc
   HEADER_FILES
     model/meshtastic_interface.h
     model/meshtastic_libinterface.h
+    model/meshtastic_mac.h
     model/meshtastic_radio.h
     helper/meshtastic_helper.h
+    helper/meshtastic_mac_helper.h
   LIBRARIES_TO_LINK
     ${libnetwork}
     ${libpropagation}

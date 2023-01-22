@@ -79,7 +79,7 @@ LoraMeshHelper::Install(const LoraMeshHelper& meshHelpe,
         }
 
         // Create the MAC
-        Ptr<lorawan::LorawanMac> mac = macHelper.Create(node, device);
+        Ptr<LorawanMac> mac = macHelper.Create(node, device);
         NS_ASSERT(mac != 0);
         mac->SetPhy(phy);
         NS_LOG_DEBUG("Done creating the MAC");
