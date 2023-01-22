@@ -1,0 +1,21 @@
+build_lib(
+  LIBNAME meshtastic
+  SOURCE_FILES
+    model/meshtastic_interface.cc
+    model/meshtastic_libinterface.cc
+    model/meshtastic_radio.cc
+    helper/meshtastic_helper.cc
+  HEADER_FILES
+    model/meshtastic_interface.h
+    model/meshtastic_libinterface.h
+    model/meshtastic_radio.h
+    helper/meshtastic_helper.h
+  LIBRARIES_TO_LINK
+    ${libnetwork}
+    ${libpropagation}
+    ${libenergy}
+    ${libpoint-to-point}
+    ${libbuildings}
+    ${libmobility}
+    ${liblorawan}
+)
