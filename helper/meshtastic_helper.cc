@@ -22,7 +22,7 @@ LoraMeshHelper::~LoraMeshHelper()
 NetDeviceContainer
 LoraMeshHelper::Install(const LoraMeshHelper& meshHelpe,
                         const lorawan::LoraPhyHelper& phyHelper,
-                        const lorawan::LorawanMacHelper& macHelper,
+                        const MeshtasticMacHelper& macHelper,
                         NodeContainer c) const
 {
     NS_LOG_FUNCTION_NOARGS();
@@ -79,7 +79,7 @@ LoraMeshHelper::Install(const LoraMeshHelper& meshHelpe,
         }
 
         // Create the MAC
-        Ptr<LorawanMac> mac = macHelper.Create(node, device);
+        Ptr<MeshtasticMac> mac = macHelper.Create(node, device);
         NS_ASSERT(mac != 0);
         mac->SetPhy(phy);
         NS_LOG_DEBUG("Done creating the MAC");
@@ -121,7 +121,7 @@ LoraMeshHelper::Install(const LoraMeshHelper& meshHelpe,
 NetDeviceContainer
 LoraMeshHelper::Install(const LoraMeshHelper& mesh,
                         const lorawan::LoraPhyHelper& phy,
-                        const lorawan::LorawanMacHelper& mac,
+                        const MeshtasticMacHelper& mac,
                         Ptr<Node> node) const
 {
     return Install(mesh, phy, mac, NodeContainer(node));

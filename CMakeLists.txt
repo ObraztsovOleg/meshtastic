@@ -7,6 +7,9 @@ build_lib(
     model/meshtastic_mac.cc
     helper/meshtastic_helper.cc
     helper/meshtastic_mac_helper.cc
+    model/gateway_meshtastic_mac.cc
+    model/class_a_end_device_meshtastic_mac.cc
+    model/end_device_meshtastic_mac.cc
   HEADER_FILES
     model/meshtastic_interface.h
     model/meshtastic_libinterface.h
@@ -14,6 +17,9 @@ build_lib(
     model/meshtastic_radio.h
     helper/meshtastic_helper.h
     helper/meshtastic_mac_helper.h
+    model/gateway_meshtastic_mac.h
+    model/class_a_end_device_meshtastic_mac.h
+    model/end_device_meshtastic_mac.h
   LIBRARIES_TO_LINK
     ${libnetwork}
     ${libpropagation}
