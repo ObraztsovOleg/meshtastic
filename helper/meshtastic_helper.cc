@@ -1,8 +1,7 @@
 #include "ns3/meshtastic_helper.h"
 
 #include "ns3/log.h"
-
-// #include <fstream>
+#include <fstream>
 
 namespace ns3
 {
