@@ -1,0 +1,3 @@
+[submodule "model/firmware"]
+	path = model/firmware
+	url = https://github.com/meshtastic/firmware.git
