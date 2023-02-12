@@ -7,9 +7,10 @@ namespace ns3
 namespace meshtastic
 {
 
-class MeshtasticNetDevice : public NetDevice
+class MeshtasticNetDevice : public NetDevice, public PhoneAPI
 {
   public:
+    
 
 };
 

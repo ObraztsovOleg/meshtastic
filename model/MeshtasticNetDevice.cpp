@@ -23,8 +23,7 @@ MeshtasticNetDevice::Send (Ptr<Packet> packet)
   NS_LOG_FUNCTION (this << packet);
 
   // Send the packet to the MAC layer, if it exists
-  NS_ASSERT (m_mac != 0);
-  m_mac->Send (packet);
+  handleToRadio(const uint8_t *buf, size_t bufLength);
 }
 
 bool
